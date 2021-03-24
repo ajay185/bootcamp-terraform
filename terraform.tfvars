@@ -1,5 +1,5 @@
 # GCP Settings
-project_id   = "tmar-roidtc501" # Enter your project ID here.
+project_id   = "mar-roidtc501" # Enter your project ID here.
 gcp_region_1 = "us-central1"
 gcp_zone_1   = "us-central1-c"
 

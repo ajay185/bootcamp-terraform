@@ -25,6 +25,9 @@ resource "kubernetes_deployment" "frontend-deployment" {
         container {
           image = "ajay185/frontend:v2.0"
           name  = "cloud-ninja-frontend"
+          env {
+            SERVER = "http://cloud-ninja-backend"
+          }
 
           port {
             container_port = 8081
