@@ -18,5 +18,5 @@ resource "kubernetes_service" "frontend-service" {
 
 
 output "lb_status" {
-  value = kubernetes_service.si-service.status
+  value = kubernetes_service.frontend-service.status
 }

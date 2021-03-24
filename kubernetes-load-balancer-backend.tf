@@ -1,4 +1,4 @@
-resource "kubernetes_service" "si-service" {
+resource "kubernetes_service" "backend-service" {
   metadata {
     name      = "cloud-ninja-backend"
     namespace = kubernetes_namespace.n.metadata[0].name
@@ -18,5 +18,5 @@ resource "kubernetes_service" "si-service" {
 
 
 output "lb_status" {
-  value = kubernetes_service.si-service.status
+  value = kubernetes_service.backend-service.status
 }
