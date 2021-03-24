@@ -17,6 +17,6 @@ resource "kubernetes_service" "backend-service" {
 }
 
 
-output "lb_status" {
+output "backend_lb_status" {
   value = kubernetes_service.backend-service.status
 }
