@@ -1,4 +1,4 @@
-resource "kubernetes_deployment" "si-deployment" {
+resource "kubernetes_deployment" "frontend-deployment" {
   metadata {
     name = "cloud-ninja-frontend"
     labels = {
