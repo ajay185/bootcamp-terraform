@@ -1,4 +1,4 @@
-resource "kubernetes_service" "si-service" {
+resource "kubernetes_service" "frontend-service" {
   metadata {
     name      = "cloud-ninja-frontend"
     namespace = kubernetes_namespace.n.metadata[0].name
